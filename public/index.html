@@ -2,18 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link href="./assets/styles/index.css" type="text/css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
     <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
-    <title>React App</title>
+    <title>My Calendar</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <header>
+      <nav className="navbar">
+        <div className="container">
+          <div className="header-background_container">
+            <img src="./icons/Header/Слой 3.png" alt="header-background-icon" />
+          </div>
+          <div className="header-icon_container">
+            <a href="#" className="header-icon">
+              <img src="./icons/Header/Эллипс 1.png" alt="header-icon" />
+            </a>
+          </div>
+          <div className="header-title_container">
+            <p className="header-title">
+              Друзья, мои походы пока еще не закончились, делюсь с вами!
+            </p>
+          </div>
+          <div className="header-addEvent_container">
+            <button className="header-addEvent" type="button">
+              <img
+                src="./icons/Header/Прямоугольник, скругл. углы 2 копия.png"
+                alt="header-icon"
+              />
+              <div className="header-addEvent-title">Событие+</div>
+            </button>
+          </div>
+          <div className="header-update_container">
+            <button className="header-update" type="button">
+              <img
+                src="./icons/Header/Прямоугольник, скругл. углы 2 копия 2.png"
+                alt="header-icon"
+              />
+              <div className="header-update-title">Обновить</div>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
